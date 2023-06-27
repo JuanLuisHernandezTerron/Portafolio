@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@include mat.core();
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: 'Fonts';
+    src: url('./assets/AsapCondensed-Regular.ttf') format("opentype");
+}
+
+$custom-primary-map:(
+    50: #fff,
+    100: #e7e7e7,
+    200: #d4d2d2,
+    300: #afadad,
+    400: #8e8c8c,
+    500: #b6b4b4,
+    600: #4f4f4f,
+    700: #525151,
+    800: #343434,
+    900: #363636,
+    contrast:(
+        50: #190341,
+        100: #250363,
+        200: #260267,
+        300: #2c0279,
+        400: #020103,
+        500: #360590,
+        600: #37019c,
+        700: #4201ba,
+        800: #4100ba,
+        900: #5100e7, 
+    )
+);
+
+$custom-accent-map:mat.define-palette(mat.$green-palette,A200,A100,A400);
+
+$primary-palette: mat.define-palette($custom-primary-map);
+$accent-palette: mat.define-palette($custom-accent-map);
+
+$custom-theme:mat.define-light-theme((
+    color:(
+        primary:$primary-palette,
+        accent:$accent-palette
+    )
+));
+
+@include mat.all-component-themes($custom-theme);
+
+*{
+    font-family: "Fonts";
+    background-color: rgb(25, 25, 39) !important;
+}

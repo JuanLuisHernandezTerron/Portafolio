@@ -1,0 +1,33 @@
+<div class="container portafolio mt-5">
+    <div class="row">
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center">
+            <h1 class="d-block">Hola soy Juanlu!</h1>
+            <h2 class="portafolio-secundarioTexto">- Junior Full Stack Developer -</h2>
+            <button mat-raised-button color="primary" class="mt-2"><a href="assets/CV_JuanLuisHernandezTerron.pdf"
+                    download="CV_JuanLuisHernandezTerron.pdf">Descargar CV</a></button>
+        </div>
+        <div class="col-12 mt-5 mt-md-0 col-md-4">
+            <img src="assets/img/IMG-20210815-WA0122.jpg" class="img-fluid portafolio-img" alt="" srcset="">
+        </div>
+        <div class="col-12 mt-5 mt-md-0 col-md-4 d-flex flex-column align-items-center justify-content-center">
+            <h1 class="portafolio-frase ms-2">
+                <"Primero resuelve el problema, después escribe el código">
+            </h1>
+            <button mat-raised-button color="primary" class="mt-2">Contáctame!</button>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <mat-tab-group animationDuration="1000ms" class="mb-5">
+            <mat-tab label="Personal Projects">
+                <app-personal-projects></app-personal-projects>
+            </mat-tab>
+            <mat-tab label="Technical Skills">
+                <app-technical-skills></app-technical-skills>
+            </mat-tab>
+            <mat-tab label="About Me">
+                <app-aboutme></app-aboutme>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>

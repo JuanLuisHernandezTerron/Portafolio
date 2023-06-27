@@ -1,0 +1,39 @@
+<div class="container portafolio mb-5">
+    <div class="row text-center">
+        <div class="col-md-4 col-12 mb-2">
+            <p class="ms-md-1 mt-3 portafolio-nameTec mt-3 mt-md-0">Frontend</p>
+            <div class="d-flex justify-content-center mb-3">
+                <img class="portafolio-img ms-2 me-2" src="{{src}}" *ngFor="let src of arrayIMGFront">
+            </div>
+            <p *ngFor="let informacion of arrayFront" class="d-inline m-1 portafolio-tecnologias">| {{informacion}} |</p>
+        </div>
+        <div class="col-md-4 col-12 mb-2 mt-5 mt-md-0">
+            <p class="ms-md-5 mt-3 portafolio-nameTec">Backend</p>
+            <div class="d-flex justify-content-center mb-3">
+                <img src="{{src}}" class="portafolio-img ms-5" *ngFor="let src of arrayIMGBack">
+            </div>
+            <p *ngFor="let informacion of arrayBack" class="d-inline m-1 portafolio-tecnologias">| {{informacion}}|</p>
+        </div>
+        <div class="col-md-4 col-12 mb-2 mt-5 mt-md-0">
+            <p class="ms-md-5 mt-3 portafolio-nameTec">Databases</p>
+            <div class="d-flex justify-content-center mb-3">
+                <img src="{{src}}" class="portafolio-img ms-5" *ngFor="let src of arrayIMGBD">
+            </div>
+            <p *ngFor="let informacion of arrayBBDD" class="d-inline m-1 portafolio-tecnologias">| {{informacion}} |</p>
+        </div>
+        <div class="col-md-6 col-12justify-content-center mt-5">
+            <p class="ms-3 mt-3 portafolio-nameTec">Other Technologies</p>
+            <div class="d-flex justify-content-center mb-3">
+                <img class="portafolio-Other-img ms-2 me-2" src="{{src}}" *ngFor="let src of arrayIMGLenguajes">
+            </div>
+            <p *ngFor="let informacion of arrayLenguajes" class="d-inline m-1 portafolio-tecnologias">| {{informacion}}|</p>
+        </div>
+        <div class="col-md-6 col-12 justify-content-center mt-5">
+            <p class="mt-3 portafolio-nameTec ms-2">Version Control</p>
+            <div class="d-flex justify-content-center mb-3">
+                <img class="portafolio-Other-img ms-3" src="{{src}}" *ngFor="let src of arrayIMGControlVersion">
+            </div>
+            <p *ngFor="let informacion of arrayControlVersion" class="d-inline m-1 portafolio-tecnologias">| {{informacion}}|</p>
+        </div>
+    </div>
+</div>

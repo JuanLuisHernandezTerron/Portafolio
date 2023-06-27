@@ -1,0 +1,42 @@
+.portafolio{
+    &-img{
+        border-radius: 5px;
+        background-color: #fff;
+        width: 100%;
+    }
+    &-secundarioTexto{
+        color: rgb(124, 122, 122) !important;
+    }
+    &-frase{
+        text-align: center;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: white !important;
+}
+
+hr{
+    border-color: #186988;
+}
+
+.mat-mdc-raised-button.mat-primary:hover {
+    --mdc-protected-button-container-color: #186988 !important;
+}
+
+*{
+    color: white;
+}
+
+.mat-tab-group {
+    margin-bottom: 48px;
+}
+
+.mat-mdc-tab .mdc-tab__text-label, .mat-mdc-tab-link .mdc-tab__text-label{
+    color: rgb(189, 186, 186) !important;
+}
+
+.mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label, .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label{
+    color: rgb(255, 255, 255) !important;
+}

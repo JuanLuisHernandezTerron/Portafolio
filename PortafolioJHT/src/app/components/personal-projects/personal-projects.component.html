@@ -1,0 +1,15 @@
+    <div class="row justify-content-evenly portafolio m-0">
+        <div class="col-5 d-flex" name="projects" *ngFor="let informacion of arrayInfoProject">
+            <div class="row">
+                <div class="col-12 d-flex mt-5 flex-column portafolio-divPrincipal">
+                    <img src="{{informacion.imgsrc}}" class="w-75 mt-2 m-auto" alt="Imagen Proyecto">
+                    <h2 class="text-center mt-2">{{informacion.nombre}}</h2>
+                    <p>{{informacion.descripcion}}</p>
+                    <div class="d-flex">
+                        <p *ngFor="let tecnologiasAux of informacion.tecnologias" class="ms-4">{{tecnologiasAux}}</p>
+                    </div>
+                    <button mat-raised-button color="primary"><a target="_blank" href="https://github.com/JuanLuisHernandezTerron/PFC-HernandezTruckStore" class="portafolio-titleCode">Code Source</a></button>
+                </div>
+            </div>
+        </div>
+    </div>

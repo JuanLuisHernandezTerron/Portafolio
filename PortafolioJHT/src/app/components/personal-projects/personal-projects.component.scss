@@ -1,0 +1,19 @@
+.portafolio{
+    overflow: hidden;
+    &-titulo{
+        font-size: 45px;
+    }
+
+    &-divPrincipal{
+        border: 2px solid white !important;
+        border-radius: 5px;
+    }
+    &-titleCode{
+        text-decoration: none;
+        color: white !important;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            color: rgb(164, 161, 161) !important;
+        }
+    }
+}

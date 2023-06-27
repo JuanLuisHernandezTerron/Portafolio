@@ -1,0 +1,21 @@
+.portafolio{
+    &-img{
+        width: 15%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    }
+    &-Other-img{
+        width: 15%;
+        aspect-ratio: 4/2;
+        object-fit: contain;
+    }
+
+    &-tecnologias{
+        font-size: 1.1rem;
+    }
+    
+    &-nameTec{
+        font-size: 1.5rem !important;
+        font-weight: bold;
+    }
+}
